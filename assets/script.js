@@ -1,5 +1,7 @@
 // Assignment code here
 
+// created variables for lowercase, uppercase, numeric and special characters value and placed them in an array
+
 var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -9,8 +11,12 @@ var numeric = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
 var specialCharacters = ['!', '$', '%', '_', '#', '*', '@', '~', '-', '/', '&'];
 
 
+// grabbed the 'generate' id from HTML using the getElementById document method
+
 var generateBtn = document.getElementById("generate")
 
+
+// created a function to hold the questions.
 
 function userInputQuestions() {
   console.log("User input questions got called");
@@ -18,8 +24,13 @@ function userInputQuestions() {
 
   var passwordString = ""
 
+  // created a characterPool array to hold the character arrays
+
   var characterPool = []
 
+
+  // added 'if' statements to solidfy the inputs and responses from users and code
+  
   if ((passwordLength < 8) || (passwordLength > 128)) {
 
     while ((passwordLength < 8) || (passwordLength > 128)) {
@@ -74,16 +85,20 @@ function userInputQuestions() {
 
 
 // Write password to the #password input
+
 function writePassword() {
   console.log("the write password was called");
   var password = userInputQuestions();
  
   var passwordText = document.querySelector("#password");
 
+  // The results of the  userInputQuestions() function will be stored in the 'password' variable
+
   passwordText.value = password;
 
 }
 
+// Added an event listener for the button and click action
 
 generateBtn.addEventListener("click", writePassword)
 
