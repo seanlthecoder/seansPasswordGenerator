@@ -74,3 +74,7 @@ piece together code that effectively meets the acceptance criteria.
 
 
 https://seanlthecoder.github.io/seansPasswordGenerator/
+
+
+![image](https://user-images.githubusercontent.com/111099189/203713389-38150862-ddc6-4b5d-ba3b-bc94328013d3.png)
+
